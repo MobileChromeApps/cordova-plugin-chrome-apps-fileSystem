@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-registerManualTests('chrome.fileSystem', function(rootEl, addButton) {
+exports.defineManualTests = function(rootEl, addButton) {
   var FileReader = window.FileReader || cordova.require('cordova/plugin/FileReader');
 
   var onError = function(e) {
@@ -127,4 +127,4 @@ registerManualTests('chrome.fileSystem', function(rootEl, addButton) {
 
     chrome.fileSystem.chooseEntry(chooseEntryOptions, chooseEntryCallback);
   });
-});
+};
