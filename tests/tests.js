@@ -2,8 +2,6 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-/* global logger */
-
 exports.defineManualTests = function(rootEl, addButton) {
   var FileReader = window.FileReader || cordova.require('cordova/plugin/FileReader');
 
@@ -133,6 +131,9 @@ exports.defineManualTests = function(rootEl, addButton) {
 
 exports.defineAutoTests = function() {
   'use strict';
+
+  require('cordova-plugin-chrome-apps-test-framework.jasmine_helpers').addJasmineHelpers();
+
   describeExcludeChrome('chrome.fileSystem', function() {
     // Create a file entry for testing.
     var fileEntry = new FileEntry('filename', 'fullpath');
