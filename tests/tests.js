@@ -19,10 +19,10 @@ exports.defineManualTests = function(rootEl, addButton) {
     var onFileReceived = function(file) {
       var reader = new FileReader();
       reader.onload = function(evt) {
-        logger('Text: ' + evt.target.result);
+        console.log('Text: ' + evt.target.result);
       };
       reader.onerror = function(evt) {
-        logger('Error: ' + evt.target.error.code);
+        console.log('Error: ' + evt.target.error.code);
       };
       reader.readAsText(file);
     };
@@ -41,10 +41,10 @@ exports.defineManualTests = function(rootEl, addButton) {
     var onFileReceived = function(file) {
       var reader = new FileReader();
       reader.onload = function(evt) {
-        logger('Data URL: ' + evt.target.result.substring(0, 32) + '...');
+        console.log('Data URL: ' + evt.target.result.substring(0, 32) + '...');
       };
       reader.onerror = function(evt) {
-        logger('Error: ' + evt.target.error.code);
+        console.log('Error: ' + evt.target.error.code);
       };
       reader.readAsDataURL(file);
     };
@@ -60,7 +60,7 @@ exports.defineManualTests = function(rootEl, addButton) {
 
     // This method is called when a file is uploaded.
     var onFileUploaded = function(response) {
-      logger('Response code: ' + response.responseCode);
+      console.log('Response code: ' + response.responseCode);
     };
 
     // This method is called when a file is received from a file entry.
@@ -78,9 +78,9 @@ exports.defineManualTests = function(rootEl, addButton) {
     // This method is called when a file entry is retrieved.
     var chooseEntryCallback = function(fileEntry) {
       if (fileEntry) {
-        logger('Writable file entry non-null: ' + fileEntry.fullPath);
+        console.log('Writable file entry non-null: ' + fileEntry.fullPath);
       } else {
-        logger('Writable file entry null, as expected.');
+        console.log('Writable file entry null, as expected.');
       }
     };
 
@@ -93,9 +93,9 @@ exports.defineManualTests = function(rootEl, addButton) {
     // This method is called when a file entry is retrieved.
     var chooseEntryCallback = function(fileEntry) {
       if (fileEntry) {
-        logger('Save file entry non-null: ' + fileEntry.fullPath);
+        console.log('Save file entry non-null: ' + fileEntry.fullPath);
       } else {
-        logger('Save file entry null, as expected.');
+        console.log('Save file entry null, as expected.');
       }
     };
 
@@ -107,7 +107,7 @@ exports.defineManualTests = function(rootEl, addButton) {
   addButton('chooseEntry, images only', function() {
     // This method is called when a file entry is retrieved.
     var chooseEntryCallback = function(fileEntry) {
-      logger('File entry path: ' + fileEntry.fullPath);
+      console.log('File entry path: ' + fileEntry.fullPath);
     };
 
     var chooseEntryOptions = { acceptsAllTypes: false,
@@ -119,7 +119,7 @@ exports.defineManualTests = function(rootEl, addButton) {
   addButton('chooseEntry, videos only', function() {
     // This method is called when a file entry is retrieved.
     var chooseEntryCallback = function(fileEntry) {
-      logger('File entry path: ' + fileEntry.fullPath);
+      console.log('File entry path: ' + fileEntry.fullPath);
     };
 
     var chooseEntryOptions = { acceptsAllTypes: false,
