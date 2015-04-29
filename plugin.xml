@@ -38,7 +38,7 @@
 
     <config-file target="res/xml/config.xml" parent="/widget">
       <feature name="ChromeFileSystem">
-        <param name="android-package" value="ChromeFileSystem"/>
+        <param name="android-package" value="org.chromium.ChromeFileSystem"/>
       </feature>
     </config-file>
   </platform>
