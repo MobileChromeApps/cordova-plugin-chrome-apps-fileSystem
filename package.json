@@ -1,0 +1,38 @@
+{
+  "name": "cordova-plugin-chrome-apps-fileSystem",
+  "version": "1.0.5-dev",
+  "description": "This plugin allows apps to access a device's file system.",
+  "cordova": {
+    "id": "cordova-plugin-chrome-apps-filesystem",
+    "platforms": [
+      "ios",
+      "android",
+      "bb"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MobileChromeApps/cordova-plugin-chrome-apps-fileSystem.git"
+  },
+  "keywords": [
+    "chrome",
+    "file",
+    "filesystem",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android",
+    "cordova-bb"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MobileChromeApps/cordova-plugin-chrome-apps-fileSystem/issues"
+  },
+  "homepage": "https://github.com/MobileChromeApps/cordova-plugin-chrome-apps-fileSystem"
+}
