@@ -16,6 +16,11 @@ The API reference is [here](http://developer.chrome.com/apps/fileSystem.html).
 * All files are can be made "writable"; there is not yet any differentiation here.
 
 # Release Notes
+
+## 1.0.5 (April 30, 2015)
+- Renamed plugin to pubilsh to NPM
+- Folded in code from filechooser plugin
+
 ## 1.0.4 (October 21, 2014)
 - Documentation updates.
 

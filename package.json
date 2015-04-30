@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-chrome-apps-fileSystem",
-  "version": "1.0.5-dev",
+  "version": "1.0.5",
   "description": "This plugin allows apps to access a device's file system.",
   "cordova": {
     "id": "cordova-plugin-chrome-apps-filesystem",
